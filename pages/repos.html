@@ -1,0 +1,40 @@
+---
+title: Repos
+permalink: /repos/
+layout: default
+---
+
+<div class="repos">
+  {%- if page.title -%}
+    <h1 class="page-heading">{{ page.title }}</h1>
+  {%- endif -%}
+
+	{%- if site.repos.size > 0 -%}
+
+		<!-- <hr class='block-separator'> -->
+			<hr class='block-spacer'>
+
+		{%- assign repos = site.repos -%}
+		{%- for repo in repos reversed -%}
+
+			{%- capture url_pretty -%}
+				therealcarneiro/{{ repo.name | slugify }}
+			{%- endcapture -%}
+
+			{%- include list.html
+				name='repos'
+				title=repo.name
+				faicon='fa-brands fa-github fa-xl'
+				url=repo.link
+				url_pretty=url_pretty
+				date=repo.year
+				info=repo.description
+			-%}
+
+			<!-- <hr class='block-separator'> -->
+			<hr class='block-spacer'>
+
+		{%- endfor -%}
+	{%- endif -%}
+
+</div>

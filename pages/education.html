@@ -1,0 +1,33 @@
+---
+title: Education
+permalink: /education/
+layout: default
+---
+
+<div class="education">
+  {%- if page.title -%}
+		<h1 class="page-heading">{{ page.title }}</h1>
+  {%- endif -%}
+
+	{%- if site.education.size > 0 -%}
+		<!-- <hr class='block-separator'> -->
+		<hr class='block-spacer'>
+
+		{%- assign education = site.education | sort: 'year' -%}
+		{%- for degree in education reversed -%}
+
+			{%- include list.html
+				name='education'
+				title=degree.institution
+				subtitle=degree.title
+				subsubtitle=degree.program
+				date=degree.year
+				info=degree.description
+			-%}
+
+			<hr class='block-spacer'>
+
+		{%- endfor -%}
+	{%- endif -%}
+
+</div>
