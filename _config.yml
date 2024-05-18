@@ -35,7 +35,7 @@ collections:
     permalink: /:collection/:name
 
 scholar:
-  style: assets/csl/acm.csl #apa  #chicago-fullnote-bibliography #apa
+  style: assets/csl/abnt.csl #apa  #chicago-fullnote-bibliography #apa
 
   sort_by: year, month
   order: descending # ascending
