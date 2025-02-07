@@ -22,6 +22,7 @@ header_pages:
   - pages/about.html
   - pages/publications.html
   - pages/education.html
+  - pages/repos.html
 
 collections_dir: collections
 
