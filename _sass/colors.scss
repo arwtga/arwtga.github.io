@@ -17,9 +17,9 @@ $spacing-unit: 30px !default;
 	--color-separator: var(--color-black);
 	--color-link: var(--color-magenta);
 	--color-link-visited: var(--color-magenta);
-	--color-button: var(--color-foreground);
-	--color-button-text: var(--color-);
-	--color-brand: var(--color-light-grey);
+	--color-button: var(--color-black);
+	--color-button-text: var(--color-magenta);
+	--color-brand: var(--color-black);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -30,8 +30,8 @@ $spacing-unit: 30px !default;
 		--color-separator: var(--color-white);
 		--color-link: var(--color-magenta);
 		--color-link-visited: var(--color-magenta);
-		--color-button: var(--color-ligth-grey);
-		--color-button-text: var(--color-black);
-		--color-brand: var(--color-ligth-grey);
+		--color-button: var(--color-white);
+		--color-button-text: var(--color-magenta);
+		--color-brand: var(--color-white);
 	}
 }
