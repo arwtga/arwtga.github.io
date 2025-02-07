@@ -32,6 +32,11 @@ collections:
     sort_by: start_year
     permalink: /:collection/:name
 
+  repos:
+    output: true
+    sort_by: year
+    permalink: /:collection/:name
+
 scholar:
   style: assets/csl/abnt.csl #apa  #chicago-fullnote-bibliography #apa
 
