@@ -40,8 +40,8 @@
 	}
 
 	&:hover {
-		color: var(--color-background);
-		background-color: var(--color-foreground);
+		color: var(--color-button-text);
+		background-color: var(--color-button);
 		text-decoration: none;
 	}
 }
